@@ -29,7 +29,6 @@ class Distance:
             return Distance(self.km * other)
         return NotImplemented
 
-
     def __truediv__(self, other: int | float) -> "Distance":
         if isinstance(other, (int, float)):
             return Distance(round(self.km / other, 2))
